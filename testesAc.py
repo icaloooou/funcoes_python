@@ -1,5 +1,6 @@
 ##exercicio 1
-#Nesse exercicio deveriamos implementar a função 'pertence', que recebe dois parâmetros como entrada - uma tupla e um item - e que deveria retornar o valor True caso o item
+#Nesse exercicio deveriamos implementar a função 'pertence', que recebe dois parâmetros como 
+#entrada - uma tupla e um item - e que deveria retornar o valor True caso o item
 #estivesse nessa tupla e False, caso não estivesse.
 
 def pertence(tupla, item):
@@ -13,7 +14,8 @@ s = pertence(tupla, 3)
 print(s)
 
 ##exercicio 2 
-#Nessa função chamada 'substituir', que recebe três parâmetros - uma lista, um item velho e um item novo - era necessário que fosse retornado uma lista onde todas as ocorrências
+#Nessa função chamada 'substituir', que recebe três parâmetros - uma lista, um item velho e um 
+#item novo - era necessário que fosse retornado uma lista onde todas as ocorrências
 #do item velho fossem substituidos pelo item novo.
 
 def substituir(lista, velho, novo):
@@ -27,7 +29,8 @@ lista = substituir(lista, 2, '45')
 print(lista)
 
 ##exercicio 3
-#A função 'posicoes_lista' deveria receber dois parâmetros - uma lista e um item - para que ela pudesse retornar uma outra lista apenas dos índices em que o item aparece.
+#A função 'posicoes_lista' deveria receber dois parâmetros - uma lista e um item - para que
+#ela pudesse retornar uma outra lista apenas dos índices em que o item aparece.
 
 def posicoes_lista(lista, item):
     lista2 = lista[:]
@@ -45,8 +48,9 @@ s = posicoes_lista(lista, 1)
 print(s)
 
 #exercicio 4
-#Na função 'aprovados' o objetivo era receber um dicionário como parâmetro e retornar uma lista com o nome dos alunos que foram aprovados. Lembrando que
-#o dicionário deve conter como chave o nome dos alunos e como valor uma lista de notas. Um aluno só é aprovado com média acima ou igual a 6.
+#Na função 'aprovados' o objetivo era receber um dicionário como parâmetro e retornar uma
+#lista com o nome dos alunos que foram aprovados. Lembrando que o dicionário deve conter como chave
+#o nome dos alunos e como valor uma lista de notas. Um aluno só é aprovado com média acima ou igual a 6.
 
 def aprovados(alunos):
     glorificados = []
@@ -62,9 +66,10 @@ ok = aprovados(alunos)
 print(ok)
 
 #exercicio 5
-#A função 'incluir_nota' faria com que dentro de um dicionário, contendo como chave nome de alunos e como valor uma lista de notas, fosse possível incluir uma nota
-#à algum aluno desejado. A função recebe três parâmetros: o dicionário, o nome do aluno em que a nota será atribuida e o valor da nota e no final deve retornar o dicionário com
-#as atualização realizadas.
+#A função 'incluir_nota' faria com que dentro de um dicionário, contendo como chave nome de
+#alunos e como valor uma lista de notas, fosse possível incluir uma nota à algum aluno desejado.
+#A função recebe três parâmetros: o dicionário, o nome do aluno em que a nota será atribuida
+#e o valor da nota e no final deve retornar o dicionário com as atualização realizadas.
 
 def incluir_nota(alunos, nome, nota):
     if nome in alunos:
@@ -76,7 +81,8 @@ insercao = incluir_nota(alunos, 'Denise', 10.0)
 print(insercao)
 
 #exercicio 6
-#Nessa função o dicionário será igual as duas questões acima, o nome de um aluno como chave e como valor uma lista de notas. A função terá que receber como parâmetro esse 
+#Nessa função o dicionário será igual as duas questões acima, o nome de um aluno como
+#chave e como valor uma lista de notas. A função terá que receber como parâmetro esse 
 #dicionário e devolver outro dicionário apenas com o nome dos alunos e suas maiores notas.
 
 def maiores_notas(alunos):
